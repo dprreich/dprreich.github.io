@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed-nav">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div class="flex items-center py-4">
+                        <span class="font-semibold text-gray-800 text-lg">[Your Name]</span>
+                    </div>
+                    <div class="hidden md:flex items-center space-x-8">
+                        <a href="home.html" class="py-4 px-2 text-gray-700 nav-link">Home</a>
+                        <a href="research.html" class="py-4 px-2 text-gray-700 nav-link">Research</a>
+                        <a href="teaching.html" class="py-4 px-2 text-gray-700 nav-link">Teaching</a>
+                        <a href="contact.html" class="py-4 px-2 text-gray-700 nav-link">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Research Section -->
+    <section id="research" class="bg-gray-50 py-16 mt-16">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8">Research</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md card">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Behavioral Science</h3>
+                    <p class="text-gray-600">
+                        [talk about catalyst stuff]
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md card">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Morality and Cooperation</h3>
+                    <p class="text-gray-600">
+                        [talk about research]
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carousel Section -->
+    <section id="posters" class="bg-white py-16">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8">Poster Presentations</h2>
+            <div class="carousel">
+                <div>
+                    <img src="posters/poster1.jpg" alt="Poster 1">
+                </div>
+                <div>
+                    <img src="posters/poster2.jpg" alt="Poster 2">
+                </div>
+                <div>
+                    <img src="posters/poster3.jpg" alt="Poster 3">
+                </div>
+                <!-- Add more posters as needed -->
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.carousel').slick({
+                dots: true,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 1,
+                adaptiveHeight: true
+            });
+        });
+    </script>
+</body>
+</html>
